@@ -5,7 +5,6 @@ out/
 ### IIgnore ###
 /screenshotReports/
 /reportsHtml/
-/testSuits/
 /target/
 ### Eclipse ###
 .apt_generated

@@ -5,36 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5060cdd-4490-403b-8d77-da07ca8dd453" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/geckodriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CatalogPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OrderConfirmationPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/OrderConfirmedPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/YourOrdersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/driver/SingletonDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/globalUse/ExtentReporterNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/globalUse/FundamentalUse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ErrorValidationsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/OrderGenerationEndToEndTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataFiles/DataReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataFiles/FundamentalUseForTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataFiles/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataFiles/PurchaseOrder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dataFiles/Retry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuits/PurchaseTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuits/errorValidationsTests.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testSuits/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
