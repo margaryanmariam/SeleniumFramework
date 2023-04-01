@@ -3,10 +3,12 @@ package driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SingletonDriver {
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static ChromeOptions option = new ChromeOptions();
     private SingletonDriver() {
     }
 
@@ -21,8 +23,9 @@ public class SingletonDriver {
                 }
                 default: {
                     //Initialize the chrome driver
+                    option.addArguments("--remote-allow-origins=*");
                     WebDriverManager.chromedriver().setup();
-                    driver.set(new ChromeDriver());
+                    driver.set(new ChromeDriver(option));
                     driver.get();
                 }
             }
