@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="0" total="7" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-30T23:17:31 AMT" name="All Test Suite" finished-at="2023-03-30T23:19:17 AMT" duration-ms="106603">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationsTest.wrongLogin()[pri:0, instance:ErrorValidationsTest@3feb2dda]" name="wrongLogin" class="ErrorValidationsTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="OrderGenerationEndToEndTest.createOrder(java.util.HashMap)[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" name="createOrder" class="OrderGenerationEndToEndTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2023-03-30T23:17:31 AMT" name="OrderGenerationEndToEnd Test" finished-at="2023-03-30T23:18:42 AMT" duration-ms="70875">
+      <class name="OrderGenerationEndToEndTest">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:17:31 AMT" name="initializeDriver" finished-at="2023-03-30T23:17:37 AMT" duration-ms="6003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="createOrder(java.util.HashMap)[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:17:37 AMT" name="createOrder" data-provider="getData" finished-at="2023-03-30T23:17:59 AMT" duration-ms="22375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Maryan1707, email=margaryan.mariam1707@maininator.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:17:59 AMT" name="tearDown" finished-at="2023-03-30T23:18:00 AMT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:00 AMT" name="initializeDriver" finished-at="2023-03-30T23:18:04 AMT" duration-ms="4498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method retried="true" signature="createOrder(java.util.HashMap)[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:04 AMT" name="createOrder" data-provider="getData" finished-at="2023-03-30T23:18:07 AMT" duration-ms="3315" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Maryan1707, email=margaryan.mariam1707@maininator.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i _ngcontent-xtk-c33="" class="fa fa-shopping-cart"></i> is not clickable at point (1024, 27). Other element would receive the click: <div _ngcontent-xtk-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=110.0.5481.77)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-67-generic', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3be459af9e8c323a693b04b6eaca2e50, clickElement {id=f69fe956-8042-4636-9f6e-a9268bfeb78a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.a3Ki2w}, goog:chromeOptions: {debuggerAddress: localhost:33951}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33951/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (3be459af9e8c323a693b04b6eaca2e50)] -> css selector: [routerlink='/dashboard/cart']>i]
+Session ID: 3be459af9e8c323a693b04b6eaca2e50]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i _ngcontent-xtk-c33="" class="fa fa-shopping-cart"></i> is not clickable at point (1024, 27). Other element would receive the click: <div _ngcontent-xtk-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed;">...</div>
+  (Session info: chrome=110.0.5481.77)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-67-generic', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3be459af9e8c323a693b04b6eaca2e50, clickElement {id=f69fe956-8042-4636-9f6e-a9268bfeb78a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.a3Ki2w}, goog:chromeOptions: {debuggerAddress: localhost:33951}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:33951/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (3be459af9e8c323a693b04b6eaca2e50)] -> css selector: [routerlink='/dashboard/cart']>i]
+Session ID: 3be459af9e8c323a693b04b6eaca2e50
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at globalUse.FundamentalUse.click(FundamentalUse.java:48)
+at globalUse.FundamentalUse.goToCartPage(FundamentalUse.java:41)
+at OrderGenerationEndToEndTest.createOrder(OrderGenerationEndToEndTest.java:23)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:07 AMT" name="tearDown" finished-at="2023-03-30T23:18:07 AMT" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:07 AMT" name="initializeDriver" finished-at="2023-03-30T23:18:12 AMT" duration-ms="4867" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="createOrder(java.util.HashMap)[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:12 AMT" name="createOrder" data-provider="getData" finished-at="2023-03-30T23:18:35 AMT" duration-ms="22416" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Maryan1707, email=margaryan.mariam1707@maininator.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:35 AMT" name="tearDown" finished-at="2023-03-30T23:18:35 AMT" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:35 AMT" name="initializeDriver" finished-at="2023-03-30T23:18:39 AMT" duration-ms="4388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="checkCreatedOrder()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:39 AMT" name="checkCreatedOrder" finished-at="2023-03-30T23:18:41 AMT" depends-on-methods="OrderGenerationEndToEndTest.createOrder" duration-ms="2169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCreatedOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OrderGenerationEndToEndTest@7ce69770]" started-at="2023-03-30T23:18:41 AMT" name="tearDown" finished-at="2023-03-30T23:18:42 AMT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- OrderGenerationEndToEndTest -->
+    </test> <!-- OrderGenerationEndToEnd Test -->
+    <test started-at="2023-03-30T23:18:42 AMT" name="ErrorValidations Test" finished-at="2023-03-30T23:19:17 AMT" duration-ms="35130">
+      <class name="ErrorValidationsTest">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:42 AMT" name="initializeDriver" finished-at="2023-03-30T23:18:46 AMT" duration-ms="4178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:42 AMT" name="initializeDriver" finished-at="2023-03-30T23:18:46 AMT" duration-ms="3892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method retried="true" signature="productErrorValidation()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:46 AMT" name="productErrorValidation" finished-at="2023-03-30T23:18:49 AMT" duration-ms="3391" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i _ngcontent-qyy-c33="" class="fa fa-shopping-cart"></i> is not clickable at point (1024, 27). Other element would receive the click: <div _ngcontent-qyy-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=110.0.5481.77)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-67-generic', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a62c229694d8f220ad9fa88161fe98a, clickElement {id=b398d017-1271-4449-a0f4-f80aea0ecd9b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.StMUEW}, goog:chromeOptions: {debuggerAddress: localhost:38171}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38171/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (5a62c229694d8f220ad9fa88161fe98a)] -> css selector: [routerlink='/dashboard/cart']>i]
+Session ID: 5a62c229694d8f220ad9fa88161fe98a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i _ngcontent-qyy-c33="" class="fa fa-shopping-cart"></i> is not clickable at point (1024, 27). Other element would receive the click: <div _ngcontent-qyy-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=110.0.5481.77)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-67-generic', java.version: '11.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5a62c229694d8f220ad9fa88161fe98a, clickElement {id=b398d017-1271-4449-a0f4-f80aea0ecd9b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: /tmp/.com.google.Chrome.StMUEW}, goog:chromeOptions: {debuggerAddress: localhost:38171}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:38171/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on LINUX (5a62c229694d8f220ad9fa88161fe98a)] -> css selector: [routerlink='/dashboard/cart']>i]
+Session ID: 5a62c229694d8f220ad9fa88161fe98a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy16.click(Unknown Source)
+at globalUse.FundamentalUse.click(FundamentalUse.java:48)
+at globalUse.FundamentalUse.goToCartPage(FundamentalUse.java:41)
+at ErrorValidationsTest.productErrorValidation(ErrorValidationsTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method signature="wrongLogin()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:46 AMT" name="wrongLogin" finished-at="2023-03-30T23:18:48 AMT" duration-ms="1321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:48 AMT" name="tearDown" finished-at="2023-03-30T23:18:48 AMT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:49 AMT" name="tearDown" finished-at="2023-03-30T23:18:50 AMT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:50 AMT" name="initializeDriver" finished-at="2023-03-30T23:18:55 AMT" duration-ms="5156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="productErrorValidation()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:18:55 AMT" name="productErrorValidation" finished-at="2023-03-30T23:19:17 AMT" duration-ms="22305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ErrorValidationsTest@3feb2dda]" started-at="2023-03-30T23:19:17 AMT" name="tearDown" finished-at="2023-03-30T23:19:17 AMT" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ErrorValidationsTest -->
+    </test> <!-- ErrorValidations Test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
