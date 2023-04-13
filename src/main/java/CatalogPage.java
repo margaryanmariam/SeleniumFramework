@@ -16,18 +16,14 @@ public class CatalogPage extends FundamentalUse {
         super(driver);
 
     }
-
     @FindBy(css = "[class='card']")
     public List<WebElement> productList;
     @FindBy(css = "[class = 'card']")
     public WebElement waitForHomePage;
-
-
     public List<WebElement> getProductList() {
         waitForVisibilityOfElement(waitForHomePage);
         return productList;
     }
-
     public WebElement getNeededItem(String productName) {
 
         return getProductList().stream()
